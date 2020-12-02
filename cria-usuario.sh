@@ -18,4 +18,9 @@ sudo touch /home/$USER/.ssh/authorized_keys
 sudo chmod 0644 /home/$USER/.ssh/authorized_keys
 sudo echo $PUBKEY > /home/$USER/.ssh/authorized_keys
 sudo echo "$USER ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-echo "Usuario $USER criado com sucesso!"
+if ( $? != "0")
+then
+    echo "Houve um erro ao criar o usuário"
+else
+    echo "Usuario $USER criado com sucesso!"
+fi
