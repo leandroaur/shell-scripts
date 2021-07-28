@@ -21,4 +21,4 @@ sudo systemctl start kibana
 sudo systemctl enable kibana
 
 sudo apt-get install logstash -y
-~
+sudo apt update
