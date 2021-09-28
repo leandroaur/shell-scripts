@@ -1,0 +1,13 @@
+Tipos de variaveis
+Globais 
+  Encontradas a partir do comando env, pode ser utilizada para diferentes ambientes
+Locais
+  Variaveis não herdadas, pode ser criada com o seguinte método:
+    NOME=valor como por exemplo
+      teste=valor
+    Para se verificar o valor através do echo
+      echo $teste
+    Para disponibilizar a variável criada para outros shell ou programas com o comando export:
+      export teste
+    Para remover
+      unset teste		

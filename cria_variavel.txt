@@ -1,0 +1,7 @@
+#variavel local
+teste='teste'
+#tornar a variavel global
+export teste
+env | grep teste
+#remover a variavel criada
+unset teste
